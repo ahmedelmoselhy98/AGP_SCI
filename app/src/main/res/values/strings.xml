@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AGP</string>
+    <string name="agp">AGP</string>
+    <string name="agp_stand_for">Active Gays Program</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="login">Login</string>
+
+    <string-array name="sub_categoryy_array">
+        <item>Choose Your Department</item>
+        <item>رياضيات وحاسب</item>
+        <item>فيزياء</item>
+        <item>كيماء</item>
+        <item>كيماء عضويه</item>
+        <item>جيوفيزياء</item>
+        <item>رياضيات بحته</item>
+        <item>جولوجيا</item>
+
+    </string-array>
+
+</resources>

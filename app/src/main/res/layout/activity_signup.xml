@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue_500"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.elmoselhy.ahmed.agp.SignUp">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:orientation="vertical"
+    android:background="@color/lightblue_500"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center_horizontal"
+
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="50dp"
+            android:src="@drawable/lecture_image"
+            app:civ_border_width="0dp" />
+
+        <TextView
+            android:id="@+id/agp_main_textView"
+            style="@style/CustomTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Registration"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+        >
+    <EditText
+        android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:hint="User Name"
+            android:textColor="@color/gray"
+            android:padding="16dp"
+            />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"
+        android:hint="Email Address"
+        android:textColor="@color/gray"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/gray"
+        />
+        <EditText
+            android:id="@+id/confPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/gray"
+            />
+        <Spinner
+            android:id="@+id/spinner_categ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="35dp"
+            android:entries="@array/sub_categoryy_array"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_background"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center"
+            android:text="Done"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/login_button"
+            android:background="@drawable/button_background_pattern3"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue_500">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.elmoselhy.ahmed.agp.MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="50dp"
+                android:src="@drawable/lecture_image"
+                app:civ_border_width="0dp" />
+
+            <TextView
+                android:id="@+id/agp_main_textView"
+                style="@style/CustomTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/agp"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/agp_stands_for_main_textView"-->
+        <!--style="@style/CustomTextStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/agp_main_textView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:text="@string/agp_stand_for"-->
+        <!--android:textSize="25sp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" />
+
+        <EditText
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:textColor="@color/gray" />
+
+
+        <EditText
+            android:id="@+id/pswrd_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="***********"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:textColor="@color/gray" />
+
+        <!--<Button-->
+            <!--android:id="@+id/forgetpassword"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="forget password ?"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/sign_in_button"
+                style="@style/CustomTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1"
+                android:background="@drawable/button_background_pattern3"
+                android:text="@string/sign_in_text" />
+
+            <Button
+                android:id="@+id/sign_up_button"
+                style="@style/CustomTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1"
+                android:background="@drawable/button_background_pattern3"
+                android:text="@string/sign_up_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
